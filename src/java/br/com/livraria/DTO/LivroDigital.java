@@ -10,9 +10,8 @@ package br.com.livraria.DTO;
  */
 public class LivroDigital extends Livros {
         
-    public void MostrarDesconto(Livros livro){
-        double desconto = livro.getValor();
-        desconto -= desconto * 0.1;
-        System.err.println("Valor do Livro Digital" + livro.getNomeLivro() +" com desconto: " + desconto);                
+    public double MostrarDesconto(double valor){
+        double desconto = valor;
+        return desconto -= desconto * 0.1;
     }
 }

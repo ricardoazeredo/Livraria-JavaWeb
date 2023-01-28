@@ -8,10 +8,9 @@ package br.com.livraria.DTO;
 public class LivroFisico extends Livros {
     
     
-    public void MostrarDesconto(Livros livro){
-        double desconto = livro.getValor();
-        desconto -= desconto * 0.05;
-        System.out.println("Valor do Livro Físico com desconto: "+ desconto);                
+    public double MostrarDesconto(double valor){
+        double desconto = valor;
+        return desconto -= desconto * 0.05;                        
     }
 
 }
